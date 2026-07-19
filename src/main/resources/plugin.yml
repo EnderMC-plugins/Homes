@@ -1,0 +1,40 @@
+name: UltimateHomes
+author: kixmc
+version: ${version}
+api-version: 1.13
+main: com.kixmc.uh.UltimateHomes
+commands:
+  sethome:
+    description: Set a personal home. (waypoint)
+  home:
+    description: Teleport to a personal home. (waypoint)
+  homes:
+    description: List your or another players homes.
+  delhome:
+    description: Delete your or another players home.
+  ultimatehomes:
+    description: Information and admin command for UltimateHomes.
+    aliases: [uh]
+permissions:
+  ultimatehomes.sethome:
+    default: true
+  ultimatehomes.home:
+    default: true
+  ultimatehomes.homes:
+    default: true
+  ultimatehomes.delhome:
+    default: true
+  ultimatehomes.homes.other:
+   default: op
+  ultimatehomes.home.other:
+    default: op
+  ultimatehomes.delhome.other:
+    default: op
+  ultimatehomes.reload:
+    default: op
+  ultimatehomes.sethome.unlimited:
+    default: op
+  ultimatehomes.warmup.bypass:
+    default: op
+  ultimatehomes.deleteallhomes:
+    default: op
