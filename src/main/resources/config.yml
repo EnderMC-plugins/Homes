@@ -1,0 +1,42 @@
+# -------------------------------------------------------------------------------
+#
+#  _   _
+# | | | | ___  _ __ ___   ___  ___
+# | |_| |/ _ \| '_ ` _ \ / _ \/ __|
+# |  _  | (_) | | | | | |  __/\__ \
+# |_| |_|\___/|_| |_| |_|\___||___/
+#  by kixmc & herrlamatv
+#
+# -------------------------------------------------------------------------------
+# Like the plugin? Leave a rating on Spigot and check out my other plugins! :D
+# https://www.spigotmc.org/resources/authors/kixmc.428038/
+# -------------------------------------------------------------------------------
+#                                 INFO
+# * The language selects the message file in plugins/Homes/lang/ (de, en or fr). You can add your own file there, e.g. "es.json" with "language: es". If the file doesn't exist, en is used.
+# * The prefix replaces %pre% in all messages.
+# * If homesGui is true, /homes opens a GUI where players can create, teleport to and delete their homes. If false, /homes lists the homes in chat.
+# * Changes to this file and to the language files are applied with /homesadmin reload.
+# * The warmup value is in seconds. Set it to 0 to disable it entirely.
+# * teleportCooldown is the time in seconds a player has to wait after teleporting to a home (/home or the /homes GUI) before teleporting again. Set it to 0 to disable it. Players with the permission "homes.cooldown.<seconds>" (5, 10, 15, 30, 45, 60, 90 or 120) get that cooldown instead; if a player has several, the lowest applies. Players with "homes.cooldown.bypass" have no cooldown.
+# * For custom max home caps for ranks, use the "homes.sethome.max.<max>" permission with a plugin like LuckPerms. Maximum permissions do not stack; only the highest inherited node will apply. For unlimited homes, use the "homes.sethome.unlimited" permission. Permission values will always take priority over the defaultMaxHomes amount.
+# * Permissions for everyone: homes.sethome, homes.home, homes.homes, homes.delhome. Permissions for ops: homes.home.other, homes.homes.other, homes.delhome.other, homes.sethome.unlimited, homes.warmup.bypass, homes.cooldown.bypass, homes.admin (/homesadmin)
+# * "Unsafe" are locations deemed risky, either very close to lava, in the air, or on other non-solid blocks
+# * Alternate command executor listens on command preprocess and disables the official command event to attempt to override other plugins with the same commands. If you're having conflict issues, try enabling this option and running /homesadmin reload. Note that this may cause issues with other plugins blocking execution of the Homes commands
+# * Home worlds are the allowed/disallowed worlds for creating and teleporting to homes. The type can be either "WHITELIST" (only worlds in the list are allowed for home commands) or "BLACKLIST" (all worlds are allowed except the ones in the list)
+# -------------------------------------------------------------------------------
+language: de
+prefix: '&8[&aHomes&8]'
+homesGui: true
+defaultMaxHomes: 1
+warmup: 3
+teleportCooldown: 45
+respawnAtHome: true
+confirmUnsafeTeleports: true
+blockCreatingUnsafeSethomes: true
+considerMidAirUnsafe: true
+alternateCommandExecutor: false
+showDetectedConflictWarning: true
+homeWorlds:
+  type: BLACKLIST
+  list:
+    - "exampleDisabledWorld"

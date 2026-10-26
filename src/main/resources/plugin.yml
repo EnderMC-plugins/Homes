@@ -1,8 +1,8 @@
-name: UltimateHomes
-author: kixmc
-version: ${version}
-api-version: 1.13
-main: com.kixmc.uh.UltimateHomes
+name: Homes
+authors: [kixmc, herrlamatv]
+version: ${project.version}
+api-version: '1.20'
+main: com.kixmc.homes.Homes
 commands:
   sethome:
     description: Set a personal home. (waypoint)
@@ -12,29 +12,45 @@ commands:
     description: List your or another players homes.
   delhome:
     description: Delete your or another players home.
-  ultimatehomes:
-    description: Information and admin command for UltimateHomes.
-    aliases: [uh]
+  homesadmin:
+    description: Manage the homes of all players in a GUI or reload the config.
+    usage: /homesadmin [reload]
 permissions:
-  ultimatehomes.sethome:
+  homes.sethome:
     default: true
-  ultimatehomes.home:
+  homes.home:
     default: true
-  ultimatehomes.homes:
+  homes.homes:
     default: true
-  ultimatehomes.delhome:
+  homes.delhome:
     default: true
-  ultimatehomes.homes.other:
-   default: op
-  ultimatehomes.home.other:
+  homes.homes.other:
     default: op
-  ultimatehomes.delhome.other:
+  homes.home.other:
     default: op
-  ultimatehomes.reload:
+  homes.delhome.other:
     default: op
-  ultimatehomes.sethome.unlimited:
+  homes.sethome.unlimited:
     default: op
-  ultimatehomes.warmup.bypass:
+  homes.warmup.bypass:
     default: op
-  ultimatehomes.deleteallhomes:
+  homes.cooldown.bypass:
+    default: op
+  homes.cooldown.5:
+    default: false
+  homes.cooldown.10:
+    default: false
+  homes.cooldown.15:
+    default: false
+  homes.cooldown.30:
+    default: false
+  homes.cooldown.45:
+    default: false
+  homes.cooldown.60:
+    default: false
+  homes.cooldown.90:
+    default: false
+  homes.cooldown.120:
+    default: false
+  homes.admin:
     default: op

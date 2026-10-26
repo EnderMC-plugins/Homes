@@ -1,0 +1,116 @@
+{
+  "command": {
+    "noPermission": "%pre% &cDafür hast du keine Berechtigung.",
+    "disallowedSethome": "%pre% &cIn dieser Welt kannst du kein Home setzen (%arg1).",
+    "disallowedHomeDestination": "%pre% &cHomes sind in dieser Welt deaktiviert (%arg1).",
+    "sethome": {
+      "usage": "%pre% &fFalsche Verwendung! Nutze &3/sethome <Name>",
+      "invalidSender": "%pre% &cNur Spieler können ein Home setzen.",
+      "createdHome": "%pre% &fDein Home wurde an deiner aktuellen Position gesetzt.",
+      "createdNamedHome": "%pre% &fDas Home &3%arg1&f wurde an deiner aktuellen Position erstellt.",
+      "noMoreHomes": "%pre% &fDu kannst keine weiteren Homes setzen. Nutze /delhome <Name>, um ein Home zu entfernen. (Limit: &3%arg1&f)",
+      "nameAlreadyExists": "%pre% &fDu hast bereits ein Home namens &3%arg1&f! Versuche es mit einem anderen Namen.",
+      "nonAlphanumeric": "%pre% &fDer Name deines Homes darf nur Buchstaben und Zahlen enthalten. Versuche es mit &3%arg2 &foder wähle einen anderen Namen.",
+      "nonAlphanumericNoSuggestion": "%pre% &fDer Name deines Homes darf nur Buchstaben und Zahlen enthalten. Bitte wähle einen anderen Namen.",
+      "unsafeLocation": "%pre% &cHier kannst du kein Home setzen, weil der Ort unsicher ist!"
+    },
+    "home": {
+      "usage": "%pre% &fFalsche Verwendung! Nutze &3/home <Name>",
+      "invalidSender": "%pre% &cNur Spieler können sich zu einem Home teleportieren.",
+      "invalidHome": "%pre% &fDu hast kein Home namens &3%arg1&f. Nutze &3/homes&f, um deine Homes zu sehen.",
+      "teleportedHome": "%pre% &fZu deinem Home teleportiert. (&bx&3%arg3&f, &by&3%arg4&f, &bz&3%arg5&f, &fin &3%arg2&f)",
+      "teleportedHomeNamed": "%pre% &fZum Home &3%arg1&f teleportiert. (&bx&3%arg3&f, &by&3%arg4&f, &bz&3%arg5&f, &fin &3%arg2&f)",
+      "teleportedOther": "%pre% &fZum Home &3%arg1&f von &3%arg6&f teleportiert. (&bx&3%arg3&f, &by&3%arg4&f, &bz&3%arg5&f, &fin &3%arg2&f)",
+      "invalidHomeOther": "%pre% &3%arg2&f hat kein Home namens &3%arg1&f. Nutze &3/homes %arg2&f, um die Homes zu sehen.",
+      "unknownPlayer": "%pre% &fUnbekannter Spieler &3%arg1&f.",
+      "warmup": "%pre% &fTeleportation in &3%arg1 &fSekunden. Bewege dich nicht...",
+      "teleportationCancelled": "%pre% &cDu hast dich bewegt! Teleportation abgebrochen.",
+      "unsafeTeleport": "%pre% &cWarnung: Der Zielort ist unsicher! Führe den Befehl zur Bestätigung schnell noch einmal aus.",
+      "invalidWorld": "%pre% &fDie Welt dieses Homes ist gerade nicht geladen oder ungültig.",
+      "cooldown": "%pre% &cDu kannst dich erst in &3%arg1 &cSekunden wieder teleportieren."
+    },
+    "homes": {
+      "usage": "%pre% &fFalsche Verwendung! Nutze &3/homes <Spieler>",
+      "invalidSender": "%pre% &cNur Spieler können Homes ansehen.",
+      "unknownPlayer": "%pre% &fUnbekannter Spieler &3%arg1&f.",
+      "homes": "%pre% &fHomes &8(&f%arg1&8) &f- %arg2",
+      "homesOther": "%pre% &fHomes von &3%arg1 &8(&f%arg2&8)&f: %arg3",
+      "homeListSeparator": "&f, ",
+      "homeListColor": "&3",
+      "noHomes": "%pre% &fDu hast noch keine Homes gesetzt! Setze eines mit &3/sethome <Name>",
+      "noHomesOther": "%pre% &3%arg1&f hat keine Homes gesetzt."
+    },
+    "delhome": {
+      "usage": "%pre% &fFalsche Verwendung! Nutze &3/delhome [Spieler] <Name>",
+      "invalidHome": "%pre% &fDu hast kein Home namens &3%arg1&f. Nutze &3/homes&f, um deine Homes zu sehen.",
+      "invalidHomeOther": "%pre% &3%arg2&f hat kein Home namens &3%arg1&f. Nutze &3/homes %arg2&f, um die Homes zu sehen.",
+      "deleted": "%pre% &fDein Home &3%arg1 &fwurde gelöscht.",
+      "deletedOther": "%pre% &fDas Home &3%arg1 &fvon &3%arg2 &fwurde gelöscht.",
+      "unknownPlayer": "%pre% &fUnbekannter Spieler &3%arg1&f.",
+      "invalidSender": "%pre% &cNur Spieler können ein Home löschen."
+    },
+    "homesadmin": {
+      "invalidSender": "%pre% &cNur Spieler können das Admin-Menü öffnen.",
+      "usage": "%pre% &fFalsche Verwendung! Nutze &3/homesadmin [reload]",
+      "reloaded": "%pre% &aConfig und Sprachdateien wurden neu geladen."
+    }
+  },
+  "gui": {
+    "playerList": {
+      "title": "%pre% &8Spieler",
+      "info": "&fSpieler",
+      "infoOnline": "&aOnline: &f%arg1",
+      "infoOffline": "&cOffline: &f%arg1",
+      "online": "&a%arg1",
+      "offline": "&c%arg1",
+      "homeCount": "&7Homes: &f%arg1",
+      "openHomes": "&eKlicke, um die Homes zu sehen"
+    },
+    "homeList": {
+      "title": "%pre% &8Homes von %arg1",
+      "home": "&3%arg1",
+      "world": "&7Welt: &f%arg1",
+      "coordinates": "&7Position: &f%arg1, %arg2, %arg3",
+      "teleport": "&eLinksklick: &fTeleportieren",
+      "delete": "&cShift + Rechtsklick: &fLöschen",
+      "noHomes": "&cDieser Spieler hat keine Homes."
+    },
+    "homes": {
+      "title": "%pre% &8Deine Homes",
+      "create": "&aNeues Home erstellen",
+      "count": "&7Homes: &f%arg1&7/&f%arg2",
+      "createDescription": "&7Setzt ein Home an deiner aktuellen Position",
+      "createHint": "&eKlicke und schreibe den Namen in den Chat",
+      "edit": "&bQ: &fBearbeiten",
+      "delete": "&cRechtsklick (3x): &fLöschen",
+      "deleteConfirm": "&c&lNoch %arg1x Rechtsklick zum Löschen!",
+      "noHomes": "&cDu hast noch keine Homes."
+    },
+    "createHome": {
+      "prompt": "%pre% &fSchreibe den Namen deines neuen Homes in den Chat. Mit &3%arg1 &fbrichst du ab."
+    },
+    "editHome": {
+      "title": "%pre% &8%arg1 bearbeiten",
+      "select": "&eKlicke, um dieses Icon zu wählen",
+      "selected": "&aAusgewählt",
+      "rename": "&aUmbenennen",
+      "renameHint": "&eKlicke und schreibe den neuen Namen in den Chat"
+    },
+    "renameHome": {
+      "prompt": "%pre% &fSchreibe den neuen Namen für &3%arg2 &fin den Chat. Mit &3%arg1 &fbrichst du ab.",
+      "renamed": "%pre% &fDas Home &3%arg1 &fheißt jetzt &3%arg2&f."
+    },
+    "prompt": {
+      "cancelWord": "abbrechen",
+      "cancelled": "%pre% &cEingabe abgebrochen."
+    },
+    "previousPage": "&fVorherige Seite",
+    "nextPage": "&fNächste Seite",
+    "back": "&fZurück",
+    "close": "&cSchließen"
+  },
+  "conflictWarning": {
+    "message": "%pre% &cWARNUNG: Homes hat einen möglichen KONFLIKT mit Essentials oder einem anderen Plugin mit Home-Befehlen erkannt. Falls die Home-Befehle Probleme machen, setze 'alternateCommandExecutor' in plugins/Homes/config.yml von 'false' auf 'true' und nutze /homesadmin reload.",
+    "hint": "&7Wenn die Home-Befehle ohne Probleme funktionieren, kannst du diese Warnung ausblenden, indem du 'showDetectedConflictWarning' in der config.yml auf false setzt."
+  }
+}
